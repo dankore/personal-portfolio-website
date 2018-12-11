@@ -32,3 +32,11 @@ a{
     height: 100vh;
     margin-top: 73px;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    padding-top: 5vh;
+}
