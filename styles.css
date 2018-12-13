@@ -4,17 +4,15 @@ body{
 
 
 #navbar{
+    width: 100%;
     text-align: right;
     position: fixed;
     top: 0px;
     left: 0px;
+    background-color: gray;
+  
   
 }
-
-ul {
-     width: 90vw;
-}
-
 li{
     display: inline-block;
     padding: 20px;
@@ -24,19 +22,70 @@ a{
     text-decoration: none;
     font-family: cursive;
     font-size: 25px;
+    background-color: red;
+  
 }
 #welcome-section{
     text-align: center;
     line-height: 7.5px;
-    padding-top: 10vh;
+    padding-top: 40vh;
     height: 100vh;
-    margin-top: 73px;
+    margin-top: 9px;
+}
+#project-intro{
+    font-size: 30px;
+}
+#projects{
+    
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding-top: 200px;
+    
+    
 }
 
+#grid-isolation{
+    width: 100%;
+    background-color: yellow;
+    height: inherit;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    background-color: #E8E8E8;
+}
+
+ @media (max-width: 600px) {
+     #projects {
+         flex-direction: column;
+              
+     }
+}
+
+
+#github, #bitbucket{
+    background-color: white;
+    width: 60%;
+    place-self: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ 
+}
+
+img{
+    margin-top: -30px;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 200px;
+    height: 100vh;
+}
 footer{
     background-color: black;
     color: white;
     height: 20vh;
     text-align: center;
     padding-top: 5vh;
+
 }
