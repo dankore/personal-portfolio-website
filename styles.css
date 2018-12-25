@@ -74,7 +74,11 @@ li{
        min-width: 350px;
     }
     #welcome-section > div > h1{
-        font-size: 40px;
+        font-size: 45px;
+    }
+    #welcome-section > div{
+        width: 100%;
+        padding-left: 5px;
     }
     #navbar{
        text-align: left;
