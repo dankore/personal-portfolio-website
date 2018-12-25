@@ -74,7 +74,8 @@ li{
        min-width: 350px;
     }
     #welcome-section > div > h1{
-        font-size: 45px;
+        font-size: 40px;
+       margin-top: -10px;
     }
     #welcome-section > div{
         width: 100%;
