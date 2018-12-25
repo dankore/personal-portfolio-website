@@ -3,6 +3,7 @@
 <html lang="en"> 
 
 <head> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <link rel="stylesheet" href="styles.css" type="text/css" />        
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -12,18 +13,20 @@
 <body> 
 <navbar id="navbar">
     <ul>
-        <li><a href="#welcome-section">About Me</a></li>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#repository">Repositories</a></li>
         <li><a href="#contact-container">Contact Me</a></li>
     </ul>
 </navbar>
 <section id="welcome-section">
-<div id="profile">    
-  <div><h1>Full Stack Web Developer</h1>
-  <p>Hi, I am Adamu Muhammad Dankore, a Ruby and JavaScript full stack software developer.</p>
+  <p>Hi, I am Adamu_m_Dankore, a</p> 
+  <p><span style="color: #e67e22; font-size: 40px;"  class="text" >software_engineer</span></p>
+</section>
+<section id="skills">
     <h3>Skills</h3>
-     <div id="skills-icons">
+    <div id="skills-icons">
             <div><img src="Images/github.png" height="45px" width="45px"><h4>HTML</h4></div>
             <div><img src="Images/github.png" height="45px" width="45px"><h4>CSS</h4></div>
             <div><img src="Images/github.png" height="45px" width="45px"><h4>Ruby</h4></div>
@@ -34,13 +37,11 @@
             <div><img src="Images/github.png" height="45px" width="45px"><h4>Git/Github</h4></div>
             <div><img src="Images/github.png" height="45px" width="45px"><h4>JavaScript</h4></div>
      </div>
-  </div>
-</div>
 </section>
 <section id="projects">
 <div id="projects-1"><h1>Projects</h1></div>
 <div id="projects-2">   
-    <div id="coll-1">
+    <div class="project-tile" id="coll-1">
         <a href="https://adam-smith-tribute-page.netlify.com/" target="_blank"><img class="img" src="Images/adam-smith.JPG"></a>
             <div><h2 class="p-h2">Tribute Page</h2></div>
     </div>        
@@ -54,11 +55,11 @@
    </div> 
 </div> 
 </section>
-<section id="repository" >
+<section id="repository">
     <div id="repository-1"><h1>Repositories</h1></div>
     <div id="repository-2" >    
     <div class="col-2">
-    <a href="https://github.com/dankore" target="_blank"><img color="transparent" src="Images/github.png"></img></a>
+    <a id="profile-link" href="https://github.com/dankore" target="_blank"><img color="transparent" src="Images/github.png"></img></a>
         <div><h2>Github</h2></div>
     </div>
     <div class="col-2">
@@ -82,6 +83,6 @@
 </section>
 </body> 
 <footer>
-    <h2 id="h2-footer">Designed by Dankore, Copyright &copy 2018</h2>
+    <h2 id="h2-footer">Designed_by_Dankore, Copyright_&copy_2018</h2>
 </footer>
 </html>

@@ -1,6 +1,7 @@
 body{
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     background-color: #1e272e;
+    text-transform: lowercase;
 }
 
 #navbar{
@@ -25,73 +26,91 @@ li{
 }
 
 #welcome-section{
+    padding-top: 300px;
     height: 100vh;
     color: white;
-    background-image: url(Images/profile-pic.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    position: relative;
+    text-align: left;
 }
-#welcome-section > #profile > div{ 
-    background-color: #1e272e;
-    position: absolute;
-    padding: 10% 0 0% 20%;
-    width: 30%;
-    height: 80%;
-    opacity: 0.8;
+#welcome-section > p{
+   width: 400px;
+   margin: 0 auto;
 }
-#welcome-section > #profile > div > h1{
-    font-size: 60px;
-    color: #12CBC4;
-    border: solid;
+
+.text { 
+  position: relative;
+  display: inline-block;
+  font-family: Monaco, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+  min-width: 360px;
 }
-#welcome-section > #profile > div > p{
-    border: solid;
+
+.text::after {
+  content: ".";
+  position: absolute;
+  background-color: #606060;
+  width: 10px;
+  height: 26.5px;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
-@media screen and (max-width: 550px){
-    #welcome-section > #profile > div{
-        text-align: center;
-        width: 100%;
-        padding: 40px 0 0 0;
-    }
-    #welcome-section > #profile > div > h1{
-        font-size: 40px;
-    }
-    #skills-icons{
-        margin-left: 30px;
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@media screen and (max-width: 700px){
+    #welcome-section > p{
+        transform: scale(.7);
     }
     #navbar{
-        
        text-align: left;
     }
 }
+#skills{
+    padding-top: 200px;
+    text-align: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
 #skills-icons{
+    width: 50%;
+    min-width: 300px;
     display: flex;
-    flex-wrap: wrap;
-    width: 450px;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    margin: 0 auto;
 }
 #skills-icons > div{
+    width: 100px;
+    height: 100px;
     box-shadow: 0 2px 2px 0 rgba(99, 110, 114,1.0), 0 1px 5px 0 rgba(99, 110, 114,1.0), 0 3px 1px -2px rgba(99, 110, 114,1.0);
     border-radius: 5%;
+    color: white;
+    margin: 10px;
     padding: 10px;
-    margin: 5px;
-    height: 70px;
 }
 #skills-icons > div > img{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: .7;
     transition: .7s;
 }
 #skills-icons > div > img:hover {
-    opacity: 1.0;
+   opacity: 1.0;
     filter: alpha(opacity=100);
 }
-#skills-icons > div > h4{
-    font-size: 13px;
-}    
+#skills > h3{
+    font-size: 30px;
+    color: white;
+}
 
 #projects{
     padding-top: 200px;
@@ -135,7 +154,7 @@ li{
 #projects-2 > div:hover{
     opacity: 1;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 700px){
     #projects{
         padding-top: 100px;
         height: auto;
@@ -180,7 +199,7 @@ li{
 #repository-2 > div:hover{
     opacity: 1;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 700px){
     #repository{
         height: auto;
         padding-top: 100px;
@@ -231,7 +250,7 @@ li{
 .c-twitter, .c-linkedin, .c-phone, .c-email{
     padding: 10px;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 700px){
     #contact-container{
         height: auto;
     }
@@ -240,7 +259,7 @@ li{
         flex-direction: column;
     }
 }
-@media screen and (max-width: 1000px) and (min-width: 550px){
+@media screen and (max-width: 1000px) and (min-width: 700px){
     #contacts-2 > div{
         transform:scale(0.6);
         margin: -40px;
